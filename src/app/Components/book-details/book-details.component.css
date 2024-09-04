@@ -1,0 +1,49 @@
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .card-header h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .card-body {
+    padding: 8px 0;
+  }
+  
+  .card-body p {
+    margin: 8px 0;
+  }
+  
+  .close-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: #c82333;
+  }
+  

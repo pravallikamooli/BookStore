@@ -1,0 +1,18 @@
+<div>
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Search by title" class="form-control mb-3">
+</div>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Details</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let book of bookList | filter:searchTerm | paginate: { itemsPerPage: 10, currentPage: page }">
+    <td>{{ book.title }}</td>
+    <td><button [routerLink]="['/details', book.id]">Details</button></td>
+    <td><button [routerLink]="['/edit', book.id]">Edit</button></td>
+    <td><button type="button" class="btn btn-danger" (click)="delete(book.id)">Delete</button></td>
+  </tr>
+</table>
+<pagination-controls (pageChange)="page = $event"></pagination-controls>

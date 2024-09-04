@@ -1,0 +1,70 @@
+/* book-list-component.component.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  thead {
+    background-color: #f4f4f4;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button {
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button.details {
+    background-color: #2196F3; /* Blue */
+  }
+  
+  button.edit {
+    background-color: #FFC107; /* Amber */
+  }
+  
+  button.delete {
+    background-color: #f44336; /* Red */
+  }
+  
+  button.details:hover {
+    background-color: #0b7dda;
+  }
+  
+  button.edit:hover {
+    background-color: #e0a800;
+  }
+  
+  button.delete:hover {
+    background-color: #da190b;
+  }
+  

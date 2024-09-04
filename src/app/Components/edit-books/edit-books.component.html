@@ -1,0 +1,23 @@
+<div class="container">
+    <legend>Edit Book Details</legend>
+    <form (ngSubmit)="submit()" #bookForm="ngForm">
+      <div class="mb-3">
+        <label for="booktitle" class="form-label">Title</label>
+        <input type="text" name="title" [(ngModel)]="formData.title" class="form-control" id="booktitle" required />
+      </div>
+      <div class="mb-3">
+        <label for="author" class="form-label">Author</label>
+        <input type="text" name="author" [(ngModel)]="formData.author" class="form-control" id="author" required />
+      </div>
+      <div class="mb-3">
+        <label for="publicationDate" class="form-label">Publication Date</label>
+        <input type="date" name="publicationDate" [(ngModel)]="formData.publicationDate" class="form-control" id="publicationDate" required />
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" name="price" [(ngModel)]="formData.price" class="form-control" id="price" required />
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!bookForm.form.valid">Submit</button>
+    </form>
+  </div>
+  
